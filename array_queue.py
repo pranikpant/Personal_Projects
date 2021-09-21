@@ -35,8 +35,6 @@ class ArrayQueue(BaseSet):
         else:
             self.rear = (self.rear+1)%self.capacity #searches for an empty space within array to maximize usage
             self.a[self.rear] = x
-        
-        print(self.a)
 
     def remove(self):
 
@@ -51,7 +49,6 @@ class ArrayQueue(BaseSet):
             self.ghost = self.a[self.front] #sets element removed to a variable
             self.a[self.front] = None #removes element
             self.front = (self.front+1)%self.capacity 
-            print(self.a)
             return self.ghost
     
     def __str__(self):
