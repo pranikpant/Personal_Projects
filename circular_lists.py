@@ -32,13 +32,13 @@ class CreateList:
         temp = self.head 
         if self.head is not None: 
             while temp: 
-                print (temp.data, end = ', ')
+                print (temp.data, end = ' ')
                 temp = temp.next
                 if (temp == self.head): 
                     break
     
     def countNodes(self):
-        print("count number:", self.count)
+        print("\ncount number:", self.count)
   
 
 class CircularLinkedList:    
